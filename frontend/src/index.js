@@ -13,7 +13,7 @@ import UserReducer from "./Controllers/Redux/UserSlice";
 // Redux configuration
 const RootReducer = combineReducers({
   auth: AuthReducer,
-  bug: BugReducer,
+  bugs: BugReducer,
   user: UserReducer,
 });
 

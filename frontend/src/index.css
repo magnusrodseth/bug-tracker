@@ -3,7 +3,11 @@ html {
   --light-red: #fb746c;
   --dark-red: #eb6454;
   --coral-red: #b2666a;
-  color: #ffffff;
-  background-image: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
+  --white-gradient: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  --peach-gradient: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
+  --gold-gradient: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+  --transparent-grey: rgba(68, 68, 68, 0.6);
+  color: #000000;
+  background-image: var(--peach-gradient);
   min-height: calc(100vh);
 }

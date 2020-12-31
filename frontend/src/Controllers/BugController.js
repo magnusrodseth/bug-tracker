@@ -1,7 +1,7 @@
 import BugModel from "../Models/BugModel";
 
 // TODO: This is dummy data. Remove later.
-export const retrieveBugs = () => {
+export const BugController = () => {
   let data = [];
 
   data.push(

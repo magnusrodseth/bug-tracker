@@ -7,16 +7,16 @@
 }
 
 .login-form {
-  border: 1px solid var(--dark-purple);
+  border: 1px solid var(--transparent-grey);
   border-radius: 10px;
-  background-color: var(--light-red);
+  background-image: var(--gold-gradient);
   transition: 0.5s ease;
   padding: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  box-shadow: 5px 5px 16px rgba(68, 68, 68, 0.6);
+  box-shadow: 5px 5px 16px var(--transparent-grey);
 }
 
 .login-form * {
@@ -29,12 +29,17 @@
   border-radius: 25px;
 }
 
+h1 {
+  transition: 0.5s ease;
+}
+
 button,
 input {
-  box-shadow: 5px 5px 16px rgba(68, 68, 68, 0.6);
+  box-shadow: 5px 5px 16px var(--transparent-grey);
   transition: 0.5s ease;
-  background-color: #ffffff;
+  background-image: var(--white-gradient);
   color: #000000;
+  border: var(--gold-gradient);
   padding: 5px 10px;
   font-size: 1.1rem;
   border-radius: 25px;
@@ -43,12 +48,13 @@ input {
 input:focus,
 button:focus {
   outline: none !important;
-  border: 1px solid var(--dark-purple);
-  box-shadow: 0 0 10px var(--dark-purple);
+  border: 1px solid var(--transparent-grey);
+  box-shadow: 5px 5px 16px var(--transparent-grey);
 }
 
 button:hover,
-input:hover {
+input:hover,
+h1:hover {
   transform: scale(1.05);
   transition: 0.5s ease;
 }

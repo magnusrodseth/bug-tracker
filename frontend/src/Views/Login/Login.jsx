@@ -5,10 +5,10 @@ import "./Login.css";
 
 const Login = () => {
   const dispatch = useDispatch();
-  const [input, setInput] = useState({ name: "", password: "" });
+  const [input, setInput] = useState({ email: "", password: "" });
 
   const inputChanged = (event) => {
-    setInput({ ...input, [event.target.name]: event.target.value });
+    setInput({ ...input, [event.target.email]: event.target.value });
   };
 
   const submit = (event) => {
@@ -21,9 +21,9 @@ const Login = () => {
       <form action="#" className="login-form">
         <h1>Login</h1>
         <input
-          type="text"
-          name="name"
-          placeholder="Name"
+          type="email"
+          name="email"
+          placeholder="E-mail"
           onChange={inputChanged}
           value={input.name}
         />

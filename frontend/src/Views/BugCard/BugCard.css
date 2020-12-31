@@ -1,0 +1,16 @@
+.bug-card {
+  background-image: var(--white-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--transparent-grey);
+  box-shadow: 5px 5px 16px var(--transparent-grey);
+}
+
+.priority {
+  padding: 25px;
+  width: 40px;
+  height: 15px;
+  text-align: center;
+  border-radius: 15px;
+}
