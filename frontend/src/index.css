@@ -1,0 +1,9 @@
+html {
+  --dark-purple: #545473;
+  --light-red: #fb746c;
+  --dark-red: #eb6454;
+  --coral-red: #b2666a;
+  color: #ffffff;
+  background-image: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
+  min-height: calc(100vh);
+}

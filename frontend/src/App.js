@@ -1,5 +1,11 @@
+import Login from "./Views/Login/Login";
+
 const App = () => {
-  return <></>;
+  return (
+    <>
+      <Login />
+    </>
+  );
 };
 
 export default App;
