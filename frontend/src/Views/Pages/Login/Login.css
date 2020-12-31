@@ -41,7 +41,7 @@ input {
   color: #000000;
   border: var(--gold-gradient);
   padding: 5px 10px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   border-radius: 25px;
 }
 
@@ -57,4 +57,9 @@ input:hover,
 h1:hover {
   transform: scale(1.05);
   transition: 0.5s ease;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000000;
 }

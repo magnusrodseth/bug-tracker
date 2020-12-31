@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   border: 1px solid var(--transparent-grey);
   box-shadow: 5px 5px 16px var(--transparent-grey);
 }

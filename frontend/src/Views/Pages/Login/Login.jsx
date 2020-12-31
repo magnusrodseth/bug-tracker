@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { signIn } from "../../Controllers/Redux/AuthSlice";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const dispatch = useDispatch();
   const [input, setInput] = useState({ email: "", password: "" });
 
   const inputChanged = (event) => {
-    setInput({ ...input, [event.target.email]: event.target.value });
+    setInput({ ...input, [event.target.name]: event.target.value });
   };
 
   const submit = (event) => {
@@ -24,19 +25,24 @@ const Login = () => {
           type="email"
           name="email"
           placeholder="E-mail"
-          onChange={inputChanged}
-          value={input.name}
+          onInput={inputChanged}
+          value={input.email}
+          required
         />
         <input
           type="password"
           name="password"
           placeholder="Password"
-          onChange={inputChanged}
+          onInput={inputChanged}
           value={input.password}
+          required
         />
-        <button type="submit" onClick={submit}>
-          Login
-        </button>
+
+        <Link to="/" className="nav-link">
+          <button type="submit" onClick={submit}>
+            Login
+          </button>
+        </Link>
       </form>
     </div>
   );

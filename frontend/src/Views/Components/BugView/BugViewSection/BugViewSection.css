@@ -1,0 +1,6 @@
+.view-section {
+  min-width: 40%;
+  text-align: center;
+  background-image: var(--white-gradient);
+  border-radius: 10px;
+}
