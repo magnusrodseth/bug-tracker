@@ -24,12 +24,19 @@ const ViewBugs = () => {
 
   return (
     <div className="page-container">
-      {bugs.map((bug, index) => (
-        <BugCard key={index} bug={bug} clicked={bugClicked} />
-      ))}
-      {displayBug.isDisplayed && (
-        <BugView bug={bugs.filter((bug) => bug.name === displayBug.name)[0]} />
-      )}
+      <h1>View bugs</h1>
+      <div className="bug-cards">
+        {bugs.map((bug, index) => (
+          <BugCard key={index} bug={bug} clicked={bugClicked} />
+        ))}
+      </div>
+      <div className="displayed-bug">
+        {displayBug.isDisplayed && (
+          <BugView
+            bug={bugs.filter((bug) => bug.name === displayBug.name)[0]}
+          />
+        )}
+      </div>
     </div>
   );
 };

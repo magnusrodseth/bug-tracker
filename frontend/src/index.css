@@ -1,3 +1,29 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-ExtraLight.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-ExtraLightItalic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-SemiBold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-SemiBoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
 html {
   --dark-purple: #545473;
   --light-red: #fb746c;
@@ -10,4 +36,13 @@ html {
   color: #000000;
   background-image: var(--peach-gradient);
   min-height: calc(100vh);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
 }

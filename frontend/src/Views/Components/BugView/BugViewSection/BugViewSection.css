@@ -1,6 +1,16 @@
 .view-section {
-  min-width: 40%;
-  text-align: center;
-  background-image: var(--white-gradient);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+  transition: 0.5s ease;
+}
+
+.view-section:hover {
+  border-radius: 25px;
+  transition: 0.5s ease;
 }

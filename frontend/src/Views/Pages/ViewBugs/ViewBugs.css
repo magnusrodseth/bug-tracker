@@ -1,4 +1,18 @@
+h1 {
+  text-transform: uppercase;
+}
+
 .page-container {
+  left: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bug-cards {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }

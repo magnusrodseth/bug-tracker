@@ -11,7 +11,7 @@
 .sidebar-item {
   position: relative;
   top: 20px;
-  width: 120px;
+  width: 150px;
   height: 50px;
   border-radius: 120px;
   background-image: var(--white-gradient);

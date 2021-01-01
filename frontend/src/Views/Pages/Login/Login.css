@@ -34,19 +34,23 @@ h1 {
 }
 
 button,
-input {
+input,
+select,
+textarea {
   box-shadow: 5px 5px 16px var(--transparent-grey);
   transition: 0.5s ease;
   background-image: var(--white-gradient);
   color: #000000;
-  border: var(--gold-gradient);
+  border: none;
   padding: 5px 10px;
   font-size: 0.9rem;
   border-radius: 25px;
 }
 
 input:focus,
-button:focus {
+button:focus,
+select:focus,
+textarea:focus {
   outline: none !important;
   border: 1px solid var(--transparent-grey);
   box-shadow: 5px 5px 16px var(--transparent-grey);
@@ -54,7 +58,9 @@ button:focus {
 
 button:hover,
 input:hover,
-h1:hover {
+h1:hover,
+select:hover,
+textarea:hover {
   transform: scale(1.05);
   transition: 0.5s ease;
 }

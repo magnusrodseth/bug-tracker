@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { signIn } from "../../Controllers/Redux/AuthSlice";
+import { signIn } from "../../../Controllers/Redux/AuthSlice";
 import "./Login.css";
 import { Link } from "react-router-dom";
 

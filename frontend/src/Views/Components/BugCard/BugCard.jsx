@@ -17,10 +17,10 @@ const BugCard = (props) => {
   return (
     <div className="bug-card" onClick={clickedCard}>
       <h2 className="name">{name}</h2>
-      <h4 className="priority" style={style}>
-        {label}
-      </h4>
-      <h5 className="version">{version}</h5>
+      <span className="priority" style={style}>
+        Priority: {label}
+      </span>
+      <p className="version">{version}</p>
     </div>
   );
 };
