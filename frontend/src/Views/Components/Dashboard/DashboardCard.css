@@ -1,0 +1,22 @@
+.dashboard-card {
+  background-image: var(--white-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--transparent-grey);
+  box-shadow: 5px 5px 16px var(--transparent-grey);
+  padding: 20px;
+  margin: 10px;
+  transition: 0.5s ease;
+  min-width: 500px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+  cursor: pointer;
+  border-radius: 25px;
+}

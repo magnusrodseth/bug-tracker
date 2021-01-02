@@ -1,5 +1,5 @@
 import React from "react";
-import BugForm from "../../Components/Bug/BugForm";
+import BugForm from "../../Components/BugCreateEdit/BugForm";
 
 const CreateBug = (props) => {
   const { title } = props;
