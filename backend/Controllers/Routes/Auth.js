@@ -19,7 +19,7 @@ route.post("/user", (req, res) => {
 route
   .put("/user", (req, res) => {
     const { _id, name, password, role } = req.body;
-    UserModel.findByIdAndUpdate(_id)
+    UserModel.findByIdAndUpdate(_id, { name, password, role })
       .then((user) => {
         if (!user) {
           return res.status(400).send("No user found");
@@ -48,15 +48,18 @@ route
       });
   })
   .get("/", (req, res) => {
-    UserModel.find().then((user) => {
-      if (!user) {
-        return res.status(400).send("No users found.");
-      }
-      res.send(user);
-    });
-  })
-  .catch((error) => {
-    if (error) {
-      res.status(400).send(`An error occurred. ${error}`);
-    }
+    UserModel.find()
+      .then((user) => {
+        if (!user) {
+          return res.status(400).send("No users found.");
+        }
+        res.send(user);
+      })
+      .catch((error) => {
+        if (error) {
+          res.status(400).send(`An error occurred. ${error}`);
+        }
+      });
   });
+
+module.exports = route;
